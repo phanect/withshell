@@ -1,0 +1,23 @@
+{
+  "name": "shell-integration",
+  "version": "1.0.0",
+  "description": "Seamless Shell integration to Node.js",
+  "keywords": [
+    "shell",
+    "nushell"
+  ],
+  "author": "Jumpei Ogawa (https://phanective.org)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "release": "npm publish --access public --non-interactive"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.x",
+    "npm": ">=10.x"
+  }
+}
