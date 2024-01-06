@@ -10,10 +10,13 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "lint": "eslint --ext=.js,.jsx,.ts,.tsx,.vue,.json .",
     "release": "npm publish --access public --non-interactive"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
+    "eslint": "^8.56.0",
+    "eslint-config-phanective": "latest",
     "typescript": "^5.3.3"
   },
   "engines": {
