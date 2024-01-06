@@ -1,0 +1,344 @@
+[
+  {
+    "content": "export def",
+    "shape": "shape_internalcall",
+    "span": {
+      "end": 10,
+      "start": 0
+    },
+    "type": "ast"
+  },
+  {
+    "content": "assertGitUserInfo",
+    "shape": "shape_string",
+    "span": {
+      "end": 28,
+      "start": 11
+    },
+    "type": "ast"
+  },
+  {
+    "content": "[username: string, email: string]",
+    "shape": "shape_signature",
+    "span": {
+      "end": 62,
+      "start": 29
+    },
+    "type": "ast"
+  },
+  {
+    "content": "{\n  ",
+    "shape": "shape_closure",
+    "span": {
+      "end": 67,
+      "start": 63
+    },
+    "type": "ast"
+  },
+  {
+    "content": "if",
+    "shape": "shape_internalcall",
+    "span": {
+      "end": 69,
+      "start": 67
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\"$(build-string $(git config --get user.name))\"",
+    "shape": "shape_string",
+    "span": {
+      "end": 117,
+      "start": 70
+    },
+    "type": "ast"
+  },
+  {
+    "content": "==",
+    "shape": "shape_operator",
+    "span": {
+      "end": 120,
+      "start": 118
+    },
+    "type": "ast"
+  },
+  {
+    "content": "$(username)",
+    "shape": "shape_garbage",
+    "span": {
+      "end": 132,
+      "start": 121
+    },
+    "type": "ast"
+  },
+  {
+    "content": "{\n    ",
+    "shape": "shape_block",
+    "span": {
+      "end": 139,
+      "start": 133
+    },
+    "type": "ast"
+  },
+  {
+    "content": "echo",
+    "shape": "shape_internalcall",
+    "span": {
+      "end": 143,
+      "start": 139
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\"Git username is $(username) as expected\"",
+    "shape": "shape_string",
+    "span": {
+      "end": 185,
+      "start": 144
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\n  }",
+    "shape": "shape_block",
+    "span": {
+      "end": 189,
+      "start": 185
+    },
+    "type": "ast"
+  },
+  {
+    "content": "else",
+    "shape": "shape_keyword",
+    "span": {
+      "end": 194,
+      "start": 190
+    },
+    "type": "ast"
+  },
+  {
+    "content": "{\n    ",
+    "shape": "shape_block",
+    "span": {
+      "end": 201,
+      "start": 195
+    },
+    "type": "ast"
+  },
+  {
+    "content": "echo",
+    "shape": "shape_internalcall",
+    "span": {
+      "end": 205,
+      "start": 201
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\"Git username has unexpected value.\\nExpected: $(username)\\nActual: $(build-string $(git config --get user.name))\"",
+    "shape": "shape_string",
+    "span": {
+      "end": 320,
+      "start": 206
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\n  }",
+    "shape": "shape_block",
+    "span": {
+      "end": 324,
+      "start": 320
+    },
+    "type": "ast"
+  },
+  {
+    "content": "if",
+    "shape": "shape_internalcall",
+    "span": {
+      "end": 330,
+      "start": 328
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\"$(build-string $(git config --get user.email))\"",
+    "shape": "shape_string",
+    "span": {
+      "end": 379,
+      "start": 331
+    },
+    "type": "ast"
+  },
+  {
+    "content": "==",
+    "shape": "shape_operator",
+    "span": {
+      "end": 382,
+      "start": 380
+    },
+    "type": "ast"
+  },
+  {
+    "content": "$(email)",
+    "shape": "shape_garbage",
+    "span": {
+      "end": 391,
+      "start": 383
+    },
+    "type": "ast"
+  },
+  {
+    "content": "{\n    ",
+    "shape": "shape_block",
+    "span": {
+      "end": 398,
+      "start": 392
+    },
+    "type": "ast"
+  },
+  {
+    "content": "echo",
+    "shape": "shape_internalcall",
+    "span": {
+      "end": 402,
+      "start": 398
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\"Git email is $(email) as expected\"",
+    "shape": "shape_string",
+    "span": {
+      "end": 438,
+      "start": 403
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\n  }",
+    "shape": "shape_block",
+    "span": {
+      "end": 442,
+      "start": 438
+    },
+    "type": "ast"
+  },
+  {
+    "content": "else",
+    "shape": "shape_keyword",
+    "span": {
+      "end": 447,
+      "start": 443
+    },
+    "type": "ast"
+  },
+  {
+    "content": "{\n    ",
+    "shape": "shape_block",
+    "span": {
+      "end": 454,
+      "start": 448
+    },
+    "type": "ast"
+  },
+  {
+    "content": "echo",
+    "shape": "shape_internalcall",
+    "span": {
+      "end": 458,
+      "start": 454
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\"Git email has unexpected value.\\nExpected: $(email)\\nActual: $(build-string $(git config --get user.email))\"",
+    "shape": "shape_string",
+    "span": {
+      "end": 568,
+      "start": 459
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\n  }",
+    "shape": "shape_block",
+    "span": {
+      "end": 572,
+      "start": 568
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\n}",
+    "shape": "shape_closure",
+    "span": {
+      "end": 574,
+      "start": 572
+    },
+    "type": "ast"
+  },
+  {
+    "content": "export def",
+    "shape": "shape_internalcall",
+    "span": {
+      "end": 586,
+      "start": 576
+    },
+    "type": "ast"
+  },
+  {
+    "content": "showGitUserInfo",
+    "shape": "shape_string",
+    "span": {
+      "end": 602,
+      "start": 587
+    },
+    "type": "ast"
+  },
+  {
+    "content": "[]",
+    "shape": "shape_signature",
+    "span": {
+      "end": 605,
+      "start": 603
+    },
+    "type": "ast"
+  },
+  {
+    "content": "{\n  ",
+    "shape": "shape_closure",
+    "span": {
+      "end": 610,
+      "start": 606
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\"Git username: $(build-string $(git config --get user.name))\"",
+    "shape": "shape_string",
+    "span": {
+      "end": 671,
+      "start": 610
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\"Git email: $(build-string $(git config --get user.email))\"",
+    "shape": "shape_string",
+    "span": {
+      "end": 733,
+      "start": 674
+    },
+    "type": "ast"
+  },
+  {
+    "content": "\n}",
+    "shape": "shape_closure",
+    "span": {
+      "end": 735,
+      "start": 733
+    },
+    "type": "ast"
+  }
+]
