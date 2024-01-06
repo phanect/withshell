@@ -9,7 +9,21 @@
   "author": "Jumpei Ogawa (https://phanective.org)",
   "license": "MIT",
   "type": "module",
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
+  "types": "./dist/types/main.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/main.mjs",
+        "types": "./dist/types/main.d.ts"
+      },
+      "require": "./dist/main.cjs"
+    }
+  },
   "scripts": {
+    "build": "tsc",
+    "test": "jest --verbose",
     "lint": "eslint --ext=.js,.jsx,.ts,.tsx,.vue,.json .",
     "release": "npm publish --access public --non-interactive"
   },
@@ -20,6 +34,7 @@
     "@types/node": "^20.10.6",
     "eslint": "^8.56.0",
     "eslint-config-phanective": "latest",
+    "esno": "^4.0.0",
     "typescript": "^5.3.3"
   },
   "engines": {
