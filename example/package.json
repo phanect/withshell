@@ -6,8 +6,12 @@
   "license": "CC0-1.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "start": "esno ./src/main.ts"
+  },
   "devDependencies": {
     "@types/node": "^20.10.6",
+    "esno": "^4.0.0",
     "typescript": "^5.3.3"
   },
   "engines": {
