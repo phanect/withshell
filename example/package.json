@@ -1,0 +1,17 @@
+{
+  "name": "shell-integration-example",
+  "version": "0.0.0",
+  "description": "Example project for shell-integration",
+  "author": "Jumpei Ogawa (https://phanective.org)",
+  "license": "CC0-1.0",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": ">=10.x"
+  }
+}
